@@ -1,0 +1,95 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "name": "Bright palace",
+      "email": "bright@gmail.com",
+      "mobile": "8272738398",
+      "address": "Mangalore",
+      "services": "Not Available"
+    },
+    {
+      "id": 3,
+      "name": "Sathish Foods",
+      "email": "sath@gmail.com",
+      "mobile": "9449845831",
+      "address": "Gajanuru",
+      "services": "Available"
+    },
+    {
+      "id": 5,
+      "name": "Indian Restaurant",
+      "email": "indianrest@gmail.com",
+      "mobile": "345345362",
+      "address": "Delhi",
+      "services": "Available"
+    },
+    {
+      "id": 6,
+      "name": "Udupi Hotel",
+      "email": "udupi@gmail.com",
+      "mobile": "435535533",
+      "address": "Mangalore",
+      "services": "Not Available"
+    },
+    {
+      "id": 7,
+      "name": "Vidyabarthi hotel",
+      "email": "vidyb@gmail.com",
+      "mobile": "538558985",
+      "address": "Shimogga",
+      "services": "Available"
+    },
+    {
+      "id": 8,
+      "name": "Varanasi Restaurant",
+      "email": "Varanasi@gmail.com",
+      "mobile": "9393030303",
+      "address": "Varanasi",
+      "services": "Available"
+    },
+    {
+      "id": 10,
+      "name": "Ganapathi Hotel",
+      "email": "ganapa@gmail.com",
+      "mobile": "9449595966",
+      "address": "Chennagiri",
+      "services": "Available"
+    },
+    {
+      "id": 11,
+      "name": "Don Restuarant",
+      "email": "don@gmail.com",
+      "mobile": "9449827384",
+      "address": "Karnataka",
+      "services": "Available"
+    }
+  ],
+  "signup": [
+    {
+      "id": 1,
+      "name": "Anil Kumar",
+      "mobile": "9482915450",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "name": "Anillava1999@gmail.com",
+      "mobile": "09482915450",
+      "email": "Anillava1999@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "name": "sunil",
+      "mobile": "8762687586",
+      "email": "suni@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

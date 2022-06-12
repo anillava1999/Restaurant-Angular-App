@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h3  href="#">Restauarant Management</h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active ml-auto" (click)="one.home()">Home <span class="sr-only"></span></a>&nbsp;
+        <a  class="nav-item nav-link navbar navbar-expand-sm navbar-light bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="clickAddRestore()">Add Restaurant</a>&nbsp;
+        <a class="nav-item nav-link ml-auto" (click)="one.logOut()" href="#">Logout</a>&nbsp;
+        <a class="nav-item nav-link ml-auto" (click)="one.about()" href="#">AboutUs</a>&nbsp;
+        <a    class="nav-item nav-link" [routerLink]="['/profile/'+one.message]">Profile</a>&nbsp;
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Restauarant Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="text" formControlName = "name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email ID</label>
+                    <input type="email" formControlName = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Mobile</label>
+                    <input type="text" formControlName = "mobile" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Address</label>
+                    <input type="text" formControlName = "address"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Services</label>
+                    <input type="text" formControlName = "services"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+              
+               
+              </form>        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  type="button" class="btn btn-primary" (click)="addResto()">Add Details</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- forms -->
+
+  <app-restaurant-dash  class = "var" #one></app-restaurant-dash>
+
+  

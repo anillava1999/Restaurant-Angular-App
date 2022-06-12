@@ -1,0 +1,42 @@
+<app-navigationbar></app-navigationbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Profile</h1>
+                    <hr>
+                </div>
+                <form  [formGroup]="profileupdate">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input formControlName="name" type="text"   placeholder = {{userData.name}} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword4" class="form-label">Mobile</label>
+                      <input formControlName="mobile" type="text"  placeholder = {{userData.mobile}} class="form-control" id="exampleInputPassword4">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword3" class="form-label">Email</label>
+                        <input formControlName="email" type="text" placeholder = {{userData.email}} class="form-control" id="exampleInputPassword3">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Password</label>
+                        <input formControlName="password" type="text" placeholder = {{userData.password}} class="form-control" id="exampleInputPassword2">
+                      </div>
+                      <div>
+                        <button  type="button" class="btn btn-primary" (click)="updateUserProfile()">Update Details</button>
+
+                      </div>
+
+
+                  </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
